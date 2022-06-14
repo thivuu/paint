@@ -1,0 +1,26 @@
+body {
+    font-size: 1rem;
+    font-family: $mainFonts;
+    box-sizing: border-box;
+    .dplflex {
+        display:flex;
+        justify-content: space-between;
+        img {
+            margin-right: 7px;
+        }
+    }
+}
+button {
+    border: none;
+    background-color:transparent;
+}
+main {
+    background-color: #d0d9e8;
+    .paint-box {
+        width: 1180px;
+        height: 600px;
+        // box-shadow: 1px solid darkgrey;
+        border: 1px solid black;
+        background-color:#ffff;
+    }
+}

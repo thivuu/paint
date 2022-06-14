@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="css/js/_subfuction.js"></script>
+    
+</head>
+<body>
+    <header class="header">
+    <div class="nav-bar">
+    <div class="nav-bar--right">
+    <button id="logo" class="separate"> 
+        <img src="img/logo.png" alt="">
+
+    </button>
+    <button class="btn-special" > 
+        <img class="mgt" src="img/save.1.png" alt="">
+    </button>
+    <button class="btn-special"><i class="fas fa-undo"></i></button>
+    <button class="btn-special"><i class="fas fa-redo"></i></button>
+    <button id="quick" class="separate btn-special"> <img src="img/QUICK.png" alt=""> </button>
+    <div class="file-name"><p>Untitled-Paint</p></div>
+    </div>
+
+        <ul class="btn">
+            <li><i class="far fa-window-minimize"></i></li>
+            <li><i class="far fa-window-restore"></i></li>
+            <li class="times"><i class="fas fa-times"></i></li>
+        </ul>
+    
+    </div>
+
+   <div class="ribbon-bar">
+   
+    <div class="tab-command">
+        <div class="tab">
+            <div class="file">File</div>
+            <div class="home">Home</div>
+            <div class="view">View</div>
+        </div>
+        <div id="fileopen" >
+            <div id="filetab" >
+                <div   class="command command--sub">
+                   
+                        <div class="command-file">
+                            <ul class="select">
+                                <li> <img src="img/NEW.png" alt="">
+                                   <p>New</p> 
+                                </li>
+                                <li> <img src="img/OPEN.png" alt="">
+                                    <p>Open</p>
+                                </li>
+                                <li> <img src="img/SAVE.png" alt="">
+                                    <p>Save</p>
+                                </li>
+                                <li class="liright"> <img src="img/OTHER.png" alt="">
+                                    <p>Save as</p>
+                                    <div class="right"><i class="fas fa-angle-right"></i></div>
+                                    
+                                    
+                                </li>
+                                <li class="liright">
+                                    <img src="img/PRINT.png" alt="">
+                                    <p>Print</p>
+                                    <div class="right"><i class="fas fa-angle-right"></i></div>
+                                    <ul style="display:none" >
+                                        <li> Print
+                                            <img src="img/PRINT.png" alt="">
+                                            <h3>Print</h3>
+                                            <p>Select a printer, number of copies, and other printing options before printing.</p>
+                                        </li>
+                                        <li>
+                                            <img src="img/PAGE SETUP.png" alt="">
+                                            <h3>Page setup</h3>
+                                            <p>Change the layout of the picture.</p>
+                                        </li>
+                                        <li>
+                                            <img src="img/PRINT PREVIEW.png" alt="">
+                                            <h3>Print preview</h3>
+                                            <p>Preview and make changes before printing.</p>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <img src="img/SCANNER.png" alt="">
+                                    <p>From scanner or camera</p>
+                                </li>
+                                <li>
+                                    <img src="img/SEND IN EMAIL.png" alt="">
+                                    <p>Send in email</p>
+                                </li>
+                                <li class="liright">
+                                    <img src="img/SET AS DESKTOP BACKGROUND.png" alt="">
+                                      <p>Set as desktop background</p>
+                                      <i class="fas fa-angle-right"></i>
+                                    <ul style="display:none">
+                                        Set as desktop background
+                                        <li>
+                                            <img src="img/FILL.png" alt="">
+                                        </li>
+                                        <li>
+                                            <img src="img/TITLE.png" alt="">
+                                        </li>
+                                        <li>
+                                            <img src="img/CENTER.png" alt="">
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li> 
+                                    <img src="img/PROPERTIES.png" alt="">
+                                    <p>Properties</p>
+                                </li>
+                                <li>
+                                    <img src="img/ABOUT.png" alt="">
+                                    <p>About Paint</p>
+                                </li>
+                                <li>
+                                    <img src="img/EXIST.png" alt="">
+                                    <p>Exist</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="command-file--detail" >
+                            <ul class="show"> 
+                                <p>Save as</p>
+                               
+                                <li> <img src="img/PNG.png" alt="">
+                                    <h3>PNG picture</h3>
+                                    <p>Save a photo or drawing with hight quality and use it on your computer or on the web.</p>
+                                </li>
+                                <li>  <img src="img/JPEG.png" alt="">
+                                    <h3>JPEG picture</h3>
+                                    <p>Save a photo with good quality and use it on your computer, in email, or on th web.</p>
+                                </li>
+                                <li>  <img src="img/BMP.png" alt="">
+                                    <h3>BMP picture</h3>
+                                    <p>Save any kind of picture with hight quality and use it on your computer.</p>
+                                </li>
+                                <li>  <img src="img/GIF.png" alt="">
+                                    <h3>GIF picture</h3>
+                                    <p>Save a simple drawing with lower quality and use it in email or on the web.</p>
+                                </li>
+                                <li>  <img src="img/OTHER.png" alt="">
+                                    <h3>Other formats</h3>
+                                    <p>Open the Save As dialog box to select from all possible file types.</p>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- <div class="command-home"></div>
+                        <div class="command-view"></div> -->
+                    
+                    </div>
+                </div>
+        </div>
+        
+           
+        <div class="command">
+            <button class="btn-special"><i class="fas fa-angle-up"></i></button>
+            <button class="btn-special"><i class="fas fa-question-circle"></i></button>
+        </div>
+    </div>
+    <div class="ribbon" >
+        <div class="ribbon-item ribbon-item--clipboardimage separate__ribbon">
+            <div class="ribbon-item--paste"> 
+                <button><img src="img/PASTE.png" alt=""></button>
+                <button>
+                    <p>Paste</p>
+                    <i class="fas fa-caret-down"></i>
+                </button>
+            </div>
+            <div class="ribbon-item--cutcopy">
+                <button class="dplflex">
+                    <img src="img/CUT.png" alt="">
+                    <p>Cut</p>
+                </button>
+                <button class="dplflex">
+                    <img src="img/COPY.png" alt="">
+                    <p>Copy</p>
+                </button>
+            </div>
+           
+            <div class="ribbon-name"><p>Clipboard</p></div> 
+        </div>
+        <div class="ribbon-item ribbon-item--clipboardimage separate__ribbon">
+            <div class="ribbon-item--paste">
+                <button class="select"></button>
+            <button>
+                <p>Select</p>
+                <i class="fas fa-caret-down"></i>
+            </button>
+            </div>
+            <div>
+                <button class="dplflex">
+                    <img src="img/CROP.png" alt="">
+                    <p>Crop</p>
+                </button>
+            <button class="dplflex">
+                <img src="img/RESIZE.png" alt="">
+                <p>Resize</p>
+            </button>
+            <button class="dplflex">
+                <img src="img/ROTATE.png" alt="">
+                <p>Rotate<i class="fas fa-caret-down"></i></p>
+            </button>
+            </div>
+            <div class="ribbon-name"><p>Image</p></div> 
+        </div>
+        <div class="ribbon-item ribbon-item--Tools separate__ribbon">
+            <div class="tools-box">
+                <button><img src="img/PENCIL.png" alt=""></button>
+                <button><img src="img/PAINTW.png" alt=""></button>
+                <button><img src="img/A.png" alt=""></button>
+                <button><img src="img/ERASER.png" alt=""></button>
+                <button><img src="img/PICKER.png" alt=""></button>
+                <button><img src="img/MAGNIFIER.png" alt=""></button>
+            </div>
+            
+            <div class="ribbon-name"><p>Tool</p></div> 
+        </div>
+        <div class="ribbon-item ribbon-item--brushes separate__ribbon">
+            <button>
+                <img src="img/BRUSHES.png" alt="">
+            </button>
+            <button>
+                <p>Brushes</p> 
+                <i class="fas fa-caret-down"></i>
+            </button>
+
+        </div>
+        <div class="ribbon-item ribbon-item--shapes separate__ribbon " >
+            <div class="shapes-box">
+                <img src="img/SHAPESBOX.png" alt="">
+                <div class="cell">  
+               <div></div>
+               <div></div>
+               <div></div>
+               <div></div>
+               <div></div>
+               <div></div>
+               <div></div>
+               <div></div>
+               <div></div>
+               <div></div>
+               <div></div> 
+               <div></div>
+               <div></div>
+               <div></div>
+               <div></div>
+               <div></div>
+               <div></div>
+               <div></div>
+               <div></div>
+               <div></div>
+               <div></div>
+               <div></div>
+               <div></div>
+                </div>
+               
+            </div>
+            <div>
+                <button class="dplflex">
+                    <img src="img/OUTLINE.png" alt="">
+                     <p>Outline</p> 
+                     <i class="fas fa-caret-down"></i>
+    
+                </button>
+                <button class="dplflex">
+                    <img src="img/FILLN.png" alt="">
+                     <p>Fill</p> 
+                     <i class="fas fa-caret-down"></i>
+                </button>
+            </div>
+           
+            <div class="ribbon-name"><p>Shapes</p></div> 
+        </div>
+        <div class="ribbon-item ribbon-item--brushes separate__ribbon">
+            <button> <img src="img/SIZE.png" alt=""> </button>
+            <p>Size</p>
+            <i class="fas fa-caret-down"></i>
+        </div>
+        <div class="ribbon-item ribbon-item--color separate__ribbon">
+            <div class="ribbon-item--brushes ">
+                <button class="_001">
+                </button>
+                <p>Color 1</p>
+            </div>
+            <div class="ribbon-item--brushes ">
+                <button class="_002">
+                </button>
+                <p>Color 2</p>
+            </div>
+            <div class="color-box">
+                <button class="_1"></button>
+                <button class="_2"></button>
+                <button class="_3"></button>
+                <button class="_4"></button>
+                <button class="_5"></button>
+                <button class="_6"></button>
+                <button class="_7"></button>
+                <button class="_8"></button>
+                <button class="_9"></button>
+                <button class="_10"></button>
+                <button class="_11"></button>
+                <button class="_12"></button>
+                <button class="_13"></button>
+                <button class="_14"></button>
+                <button class="_15"></button>
+                <button class="_16"></button>
+                <button class="_17"></button>
+                <button class="_18"></button>
+                <button class="_19"></button>
+                <button class="_20"></button>
+                <button></button>
+                <button></button>
+                <button></button>
+                <button></button>
+                <button></button>
+                <button></button>
+                <button></button>
+                <button></button>
+                <button></button>
+                <button></button>
+                
+            </div>
+            <div class="ribbon-name"><p>Colors</p></div>
+            
+        </div>
+        <div class="ribbon-item ribbon-item--brushes separate__ribbon">
+            <button> 
+                <img src="img/EDIT COLORS.png" alt=""> 
+                <p><span>Edit </span>
+                    <br>colors</p>
+            </button>
+        </div>
+        <div class="ribbon-item ribbon-item--brushes separate__ribbon">
+            <button> <img src="img/EDIT WITH PAINT 3D.png" alt=""> </button>
+            <p>Edit with 
+                <br> Paint 3D</p>
+        </div>
+        <!-- <div class="ribbon-item--view">
+            <div class="view-item">
+                <img src="img/ZOOMIN.png" alt="">
+                <img src="img/ZOOMOUT.png" alt="">
+                <img src="img/100%.png" alt="">
+                <p>Zoom</p>
+            </div>
+            <div class="view-item">
+                <input type="checkbox">
+                <p>Rulers</p>
+                <input type="checkbox">
+                <p>Gildlines</p>
+                <input type="checkbox">
+                <p>Status bar</p>
+                <p>Show or hide</p>
+            </div>
+            <div class="view-item">
+                <img src="img/FULLSCREEN.png" alt="">
+                <img src="img/THUMBNAIL.png" alt="">
+                <p>Display</p>
+            </div>
+        </div> -->
+   </div>
+    </header>
+    <main>
+    <div class="paint-box"></div>
+    </main>
+    
+</body>
+</html>
